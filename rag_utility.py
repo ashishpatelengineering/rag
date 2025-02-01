@@ -17,7 +17,7 @@ from dotenv import load_dotenv
 working_dir = os.path.dirname(os.path.abspath((__file__)))
 
 load_dotenv()
-GROQ_API_KEY = os.getenv("GEMINI_API_KEY")
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 os.environ["GROQ_API_KEY"] = GROQ_API_KEY
 
 # loading the embedding model
