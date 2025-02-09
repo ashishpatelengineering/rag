@@ -1,6 +1,10 @@
 import os
 import streamlit as st
+import torch
 from rag_utility import process_document_to_chroma_db, answer_question
+torch.classes.__path__ = [os.path.join(torch.__path__[0], torch.classes.__file__)] 
+# or simply:
+torch.classes.__path__ = []
 
 # set the working directory
 working_dir = os.getcwd()
